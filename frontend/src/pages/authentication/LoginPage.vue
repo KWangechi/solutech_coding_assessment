@@ -4,6 +4,7 @@
       <q-page padding>
         <q-card class="text-center">
           <div class="text-h6">Login with Your Email</div>
+          <div class="errors q-mt-lg text-red bg-red-1">This should be an error</div>
           <q-card-section>
             <q-form class="q-gutter-lg">
               <q-input
@@ -36,6 +37,7 @@
                 <q-spinner class="text-center" v-if="loading"></q-spinner
               ></q-btn>
             </q-form>
+            <div class="text-center text-bold q-mt-lg">Don't have an account? <router-link to="/register">Register Here</router-link></div>
           </q-card-section>
         </q-card>
       </q-page>
